@@ -1,1 +1,39 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="top-bar">
+            <h3>BLACKJACK</h3>
+        </div>
+        <div class="container" id="dealerContainer">
+        </div>
+        <h3 class="name">DEALER</h3>
+        <div class="game-log" id="gameLogContainer">
+            <p id="gameLog">This is the game log.</p>
+        </div>
+        <div class="button-box" id="gameButtonBox">
+            <button id="hitButton">Hit</button>
+            <button id="standButton">Stand</button>
+        </div>
+        <div class="button-box hidden" id="againButtonBox">
+            <div class="bet-input-container">
+                <label for="bet">BET:</label>
+                <input name="bet" type="number" id="betInput" value="50"/>
+            </div>
+            <button id="againButton">Play</button>
+        </div>
+        <div class="bet-container">
+            <p class="money">Total $: <span id="currentMoney"></span></p>
+            <p class="money">Current Bet: $<span id="currentBet"></span></p>
+        </div>
+        <h3 class="name">YOU</h3>
+        <div class="container" id="playerContainer">
+        </div>
+	    <script src="script.js"></script>
+    </body>
+</html>
